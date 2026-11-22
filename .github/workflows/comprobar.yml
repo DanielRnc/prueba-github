@@ -1,0 +1,9 @@
+name: Comprobar
+on: [push]
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Hola desde GitHub Actions"
+      - run: ls -la
